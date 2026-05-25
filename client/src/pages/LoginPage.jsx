@@ -158,7 +158,7 @@ export default function LoginPage() {
 
   const loginErrorMessage = loginMutation.isError
     ? loginMutation.error?.response?.data?.message ||
-      "Cannot reach the server right now. Make sure the backend is running on http://localhost:5001."
+      "Cannot reach the server right now. Make sure the backend is running on import.meta.env.VITE_API_BASE_URL."
     : null;
 
   const signupErrorMessage = signupMutation.isError

@@ -10,7 +10,7 @@ powershell -ExecutionPolicy Bypass -File .\start-demo.ps1
 
 Wait for:
 
-- backend to start on `http://localhost:5001`
+- backend to start on `import.meta.env.VITE_API_BASE_URL`
 - frontend to start on `http://localhost:5173`
 
 ## Demo Accounts
